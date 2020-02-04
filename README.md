@@ -1,6 +1,11 @@
 # MXMp3Recorder
 A tool can record  mp3 file on iOS
 
+
+## Screenshot
+
+![DEMO录制界面](https://upload-images.jianshu.io/upload_images/2546918-1cf9983f8cf55b73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/540)
+
 ## How to use
 
 ### 录制/继续录制音频 
