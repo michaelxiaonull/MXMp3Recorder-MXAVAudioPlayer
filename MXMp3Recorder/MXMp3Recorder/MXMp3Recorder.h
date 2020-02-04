@@ -43,9 +43,13 @@ typedef NS_ENUM(NSUInteger, MXRecorderRecordStatus) {
 + (instancetype)shareInstance;
 + (instancetype)recorderWithCachePath:(NSString *)cachePath delegate:(id<MXMp3RecorderDelegate>)delegate;
 
+/// 开始录制，`shouldUpdateDecibel`是否监听音频的分贝数，会触发回调[_delegate mp3Recorder:self didUpdateDecibel:convertedValue]`;
 - (void)startRecordingAndDecibelUpdate:(BOOL)shouldUpdateDecibel;
+/// 暂停录制
 - (void)pauseRecording;
+/// 继续录制
 - (void)resumeRecording;
+/// 停止录制
 - (void)stopRecording;
 /// 取消之后，录制的缓存文件会删除
 - (void)cancelRecording;

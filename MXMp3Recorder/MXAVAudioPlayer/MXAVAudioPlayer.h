@@ -34,12 +34,13 @@ typedef NS_ENUM(NSUInteger, MXAVAudioPlayerPlayStatus) {
 @property (nonatomic, readonly) MXAVAudioPlayerPlayStatus playStatus;
 
 + (instancetype)shareInstance;
-/// 播放本地音频
 + (instancetype)playerWithCachePath:(NSString *)cachePath delegate:(id<MXAVAudioPlayerDelegate>)delegate;
 
-/// 播放网络音频
+/// 播放音频
 - (void)playAudioWithURLString:(NSString *)URLString;
+/// 暂停音频
 - (void)pauseAudioPlayer;
+/// 继续音频
 - (void)resumeAudioPlayer;
 /// 意外停止，`playStatus`为`MXAVAudioPlayerPlayStatusEndFromCancel`
 - (void)stopAudioPlayer;

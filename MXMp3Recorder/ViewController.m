@@ -11,8 +11,6 @@
 #import "MXAVAudioPlayer.h"
 
 @interface ViewController () <MXMp3RecorderDelegate, MXAVAudioPlayerDelegate> {
-    MXMp3Recorder *_recorder;
-    MXAVAudioPlayer *_player;
     NSString *_mp3FilePath;
 }
 
